@@ -55,5 +55,6 @@ This will generate:
 * file * - Font file name without extension. Appropriate url will be formed based on file format available in base directory. 
 
 ## Caveats
-From the example it is clear that this library could only be worked with webpack.
+Currently this library could only be worked with webpack based projects.
+If you have any idea to make it bundle agnostic, please feel free to raise an issue. 
 
