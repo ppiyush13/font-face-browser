@@ -49,10 +49,10 @@ This will generate:
 @font-face { font-family: 'Roboto'; font-weight: 600; font-style: bold; src: url('/static/media/Roboto-Medium.58aef543.ttf') format('truetype'); }
 ```
 
-* fontDirContext * - Webpack require context. This is the base fonts directory.
-* fonts * - Array of fonts configs.
-* name *, * weight *, * style * are self explanatory
-* file * - Font file name without extension. Appropriate url will be formed based on file format available in base directory. 
+* fontDirContext - Webpack require context. This is the base fonts directory.
+* fonts - Array of fonts configs.
+* name, weight, style are self explanatory
+* file - Font file name without extension. Appropriate url will be formed based on file format available in base directory. 
 
 ## Caveats
 Currently this library could only be worked with webpack based projects.
