@@ -1,6 +1,6 @@
 {
     "name": "@font-face/browser",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Simple CSS @font-face generator for browser",
     "main": "dist/fontface.cjs.js",
     "module": "dist/fontface.esm.js",
