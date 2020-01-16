@@ -1,7 +1,7 @@
 {
-    "name": "fontface",
+    "name": "@font-face/browser",
     "version": "1.0.0",
-    "description": "Simple CSS @font-face generator",
+    "description": "Simple CSS @font-face generator for browser",
     "main": "dist/fontface.cjs.js",
     "module": "dist/fontface.esm.js",
     "scripts": {
@@ -26,7 +26,6 @@
     },
     "homepage": "https://github.com/ppiyush13/fontface",
     "dependencies": {
-        "D": "^1.0.0",
         "arrify": "^2.0.1",
         "is-function": "^1.0.1",
         "isobject": "^4.0.0"
