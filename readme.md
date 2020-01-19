@@ -1,22 +1,23 @@
-# fontface
+# @font-face/browser
 
-Simple CSS @font-face generator.
+Simple CSS @font-face Stylesheet injector for browser.
 
 ## Install
 ```javascript
-npm i fontface
+npm i @font-face/browser
 OR
-yarn add fontface
+yarn add @font-face/browser
 ```
 
 ## API usage
-fontface library exports simple function to pass font configs and generate @font-face CSS tags.
-Returned CSS needs to be injected into style tags separately.
+**@font-face/browser** library exports simple function to pass font configs and injects @font-face CSS stylesheet into document head.
 
 ## Usage
 
 ```javascript
-const generatedFontFace = fontface({
+import fontFaceBrowser from '@font-face/browser';
+
+fontFaceBrowser({
     fontDirContext: require.context('./fonts'),
     fonts: [
         {
@@ -41,7 +42,7 @@ const generatedFontFace = fontface({
 });
 ```
 
-This will generate:
+This will inject a style tag into document head with following contents:
 
 ```CSS
 @font-face { font-family: 'Roboto'; font-weight: 200; font-style: normal; src: url('/static/media/Roboto-Light.88823c20.ttf') format('truetype'); }

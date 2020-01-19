@@ -1,12 +1,14 @@
 {
     "name": "@font-face/browser",
     "version": "1.0.1",
-    "description": "Simple CSS @font-face generator for browser",
-    "main": "dist/fontface.cjs.js",
-    "module": "dist/fontface.esm.js",
+    "description": "Simple CSS @font-face injector for browser",
+    "source": "src/index.js",
+    "module": "dist/font-face-browser.esm.js",
+    "main": "dist/font-face-browser.js",
+    "unpkg": "dist/font-face-browser.umd.js",
     "scripts": {
         "test": "echo \"Error: no test specified\"",
-        "build": "rollup --config",
+        "build": "microbundle build --no-compress --external none --globals none",
         "release": "npm run build && np --no-yarn --no-cleanup --no-2fa"
     },
     "files": [
@@ -26,16 +28,11 @@
     },
     "homepage": "https://github.com/ppiyush13/fontface",
     "dependencies": {
-        "arrify": "^2.0.1",
-        "is-function": "^1.0.1",
-        "isobject": "^4.0.0"
+        "@font-face/core": "^1.0.0"
     },
     "devDependencies": {
-        "@rollup/plugin-commonjs": "^11.0.1",
-        "@rollup/plugin-node-resolve": "^7.0.0",
-        "np": "^5.2.1",
-        "rollup": "^1.29.0",
-        "rollup-plugin-sourcemaps": "^0.5.0"
+        "microbundle": "^0.11.0",
+        "np": "^5.2.1"
     },
     "keywords": [
         "font-face",
