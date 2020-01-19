@@ -1,6 +1,6 @@
 {
     "name": "@font-face/browser",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Simple CSS @font-face injector for browser",
     "source": "src/index.js",
     "module": "dist/font-face-browser.esm.js",
